@@ -23,7 +23,7 @@ Button_result = tk.Button(text = "分析結果表示",width=20, height=2, font =
 Button_result.place(x = 325 , y = 250)
 
 #研修生編集ボタン
-Button_memuber = tk.Button(text = "研修生編集",width=20, height=2, font = ("Helvetica","20","bold"), bg = "#d4d4d4")
-Button_memuber.place(x = 325 , y = 400)
+Button_member = tk.Button(text = "研修生編集",width=20, height=2, font = ("Helvetica","20","bold"), bg = "#d4d4d4")
+Button_member.place(x = 325 , y = 400)
 
 window.mainloop()
