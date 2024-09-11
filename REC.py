@@ -29,4 +29,15 @@ member_pulldown = ttk.Combobox(window, values = member, textvariable = variable2
                                     state="readonly", font = ("Helvetica","10","bold"), width = 30)
 member_pulldown.place(x=400, y=100)
 
+#時間設定のプルダウン
+time = ["50秒間だけ録音","録音終了ボタンを押すまで録音"]
+variable3 = tk.StringVar()
+time_pulldown = ttk.Combobox(window, values = time, textvariable = variable3,justify=tk.CENTER,
+                                state = "readonly", font = ("Helvetica","10","bold"), width = 30)
+time_pulldown.place(x=700 ,y=100)
+
+#録音開始ボタン
+Button_REC_start = tk.Button(text = "録音開始",width=18, height=4, font = ("Helvetica","20","bold"), bg = "#d4d4d4")
+Button_REC_start.place(x = 350,y = 200)
+
 window.mainloop()
