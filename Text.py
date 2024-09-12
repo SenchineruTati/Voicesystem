@@ -1,5 +1,6 @@
 import sys
 import tkinter as tk
+import tkinter.ttk as ttk
 
 #tkinterオブジェクトの取得
 window = tk.Tk()
@@ -15,7 +16,15 @@ label = tk.Label(text = "ID:0001" + "   " + "氏名:蒲田太郎",
                     font = ("Helvetica","20","bold"))
 label.place(x = 50, y = 25)
 
-#結果のグラフを表示するプログラム
+#表示するテキストのプルダウン
+count = ["1回目のテキストファイル","2回目のテキストファイル",
+            "3回目のテキストファイル","4回目のテキストファイル","5回目のテキストファイル"] #選択肢
+variable1 = tk.StringVar()
+count_pulldown = ttk.Combobox(window, values = count, textvariable = variable1, justify=tk.CENTER, 
+                                    state="readonly", font = ("Helvetica","10","bold"), width = 35)
+count_pulldown.place(x=600, y=40)
+
+#プルダウンで選択された回のテキストを表示
 
 #前の画面に戻るボタン
 Button_Back = tk.Button(text = "前の画面に戻る", width=15, font = ("Helvetica","15","bold"), bg = "#d4d4d4")
