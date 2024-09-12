@@ -41,7 +41,7 @@ Button_REC_start = tk.Button(text = "録音開始",width=18, height=4, font = ("
 Button_REC_start.place(x = 350,y = 200)
 
 #メインメニューへ戻るボタン
-Button_back = tk.Button(text = "メインメニューへ戻る", width=20, font = ("Helvetica","15","bold"), bg = "#d4d4d4")
-Button_back.place(x = 650, y = 500)
+Button_Mainmenu = tk.Button(text = "メインメニューへ戻る", width=20, font = ("Helvetica","15","bold"), bg = "#d4d4d4")
+Button_Mainmenu.place(x = 650, y = 500)
 
 window.mainloop()
